@@ -1,11 +1,13 @@
 # GitHub Tutorial
 
-_by <your-name-here>_
+_by Bairu Li_
 
 ---
 ## Git vs. GitHub
 
-
+What is Git and Github?
+Git is a version-control system that runs on the command line (so you need to know basic command line codes as well).
+Version-control means you can keep track of your code or just about any file
 
 ---
 ## Initial Setup
