@@ -13,14 +13,24 @@ from your working directory to the staging area. The staging area is the step be
 
 Github is the "cloud" or online in a website, that can store all your files and can let other people to see it or maybe even collaborate on it
 In github, you can also see all the changes (commits) you've made to a repository. The basic workflow of github is either starting from someone
-else's repository or your own repository.  
+else's repository or your own repository. It is called github for a reason, so it does require git.  
 
 If you don't understand some of these, don't worry you will after reading through this tutorial.
 
 ---
 ## Initial Setup
-If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)
+If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
+**Creating SSH key**  
+SSH vs. HTTPS  
+They both are the url of the [remote repo]
 
+
+
+
+
+
+
+[remote repo]: github
 
 ---
 ## Repository Setup
