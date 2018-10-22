@@ -22,7 +22,8 @@ If you don't understand some of these, don't worry you will after reading throug
 If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
 **Creating SSH key**  
 SSH vs. HTTPS  
-They both are the url of the [remote repo]
+They both are the url of the remote repo (github). However HTTPS you have to enter your github username and password everytime you do 
+a push. On the other hand SSH is a one time password for one repo. So SSH is the most convient
 
 
 
@@ -30,12 +31,23 @@ They both are the url of the [remote repo]
 
 
 
-[remote repo]: github
+
 
 ---
 ## Repository Setup
 
+When you are first in bash, you should see this:
+[image][bash]  
+The first thing you can do is to create a directory if you haven't. After creating, you must navigate (cd) into the directory before you do
+anything. Once you cd into it, you can do `git init`, which will get all the tools ready for you to use git. If you don't do `git init` you
+can't use any of the git commands. You should see (master) pop up.
 
+The next step is to create that repo in github. Go to your github account and click on this:  
+[image][addrepo]
+
+
+[addrepo]: image
+[bash]:image
 
 ---
 ## Workflow & Commands
