@@ -41,7 +41,7 @@ They both are the url of the remote repo (github). However HTTPS you have to ent
 a push. On the other hand SSH is a one time password for one repo. SSH is the most convient for us 
 (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
 will use this IDE so your directories will be safe. So if you are working on the same computer with a group, then the HTTPS would be
-more helpful because they might mess with your directories.
+more helpful because they might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
 
 [image][SSHandHTTPS]
 
@@ -55,7 +55,7 @@ always make sure you click on SSH when copying or forking a repo
 ---
 ## Repository Setup
 
-When you are first in bash, you should see this:
+When you are first in bash, you should see this: <!--What is bash? Explain that to make yourself clearer.-->
 [image][bash]  
 The first thing you can do is to create a directory if you haven't. After creating, you must navigate (cd) into the directory before you do
 anything. Once you cd into it, you can do `git init`, which will get all the tools ready for you to use git. If you don't do `git init` you
