@@ -82,13 +82,12 @@ When you are first on your IDE or on your workspace
  _This will get all the tools ready for you to use git. If you don't do `git init` then you
  can't use any of the cool git commands. You should see (master) pop up._
 
-4. Then you can **add** whatever file you've just made into the _staging area_ using `git add` followed by your file name.  
+4.  Then you can **edit** your file by opening it either manuelly on the left side in your workspace where all your directories are, or use `c9` followed the file name to open its working directory. There you can edit however you want.
+
+5. When you are happy with your edits or you've been editing for a while, you can **add** that file  into the _staging area_ using `git add` followed by the file name.  
 _Other options you can do that will save you time is to do either `git add .` or `git add --all`. `git add .` will add all files to the stage **except for deleted files**. Whereas `git add --all` will add all files including deleted files. This way you don't have to type out the file name every time_
 
-
-5. Next you can **edit** your file by opening it either manuelly on the left side in your workspace where all your directories are, or use `c9` followed the file name to open its working directory. There you can edit however you want.
-
-6. When you are happy with your edits or you've been editing for a while, you can **commit** your changes to **save** them so you don't lose them when you exit out. You can do this by using `git commit -m "a message"`.  
+6. Next, you can **commit** your changes to **save** them so you don't lose them when you exit out. You can do this by using `git commit -m "a message"`.  
 _For the "a message" part, type in a relevant message that explains what that commit is. For example, I am writing a paragraph but didn't get to finish. If I want to save my changes so that I can come back to it later, I can write my message as "need to finish analysis". Why do we write these messages? This will tell your future self what that commit is so that you don't forget if you decide to come back to that file later._
 
 Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
