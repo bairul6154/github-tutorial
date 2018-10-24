@@ -41,7 +41,7 @@ They both are the url of the remote repo (github). However HTTPS you have to ent
 a push. On the other hand SSH is a one time password for one repo. SSH is the most convient for us 
 (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
 will use this IDE so your directories will be safe. So if you are working on the same computer with a group, then the HTTPS would be
-more helpful because they might mess with your directories.
+more helpful because they might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
 
 [image][SSHandHTTPS]
 
@@ -55,21 +55,21 @@ always make sure you click on SSH when copying or forking a repo
 ---
 ## Repository Setup
 
-When you are first in bash, you should see this:
+When you are first in bash, you should see this: <!--What is bash? Explain that to make yourself clearer.-->
 [image][bash]  
 The first thing you can do is to create a directory if you haven't. After creating, you must navigate (cd) into the directory before you do
 anything. Once you cd into it, you can do `git init`, which will get all the tools ready for you to use git. If you don't do `git init` you
 can't use any of the git commands. You should see (master) pop up.
 
 Then you can add whatever file you've just made into the staging area using `git add .`
-The "." at the end of `git add` means it will add every file to the staging area including deleted and renamed files.
+The "." at the end of `git add` means it will add every file to the staging area **NOT** including deleted and renamed files. <!--Where is `git add --all`? Remember that 'git add .' doesn't add any deleted or renamed files.-->
 
 Next you can edit your file by opening it manuelly on the left side where all your directories are, or use
 `c9` and your file name to open its working directory. There you can edit however you want.
 
 When you are happy with your edits or edited for a while, you can commit your changes to save them. 
 
-The next step is to create that repo in github. Go to your github account and click on this:  
+The next step is to create that repo in github. Go to your github account and click on this:  <!--Since I can't see the images posted yet, remember to explain why we create this repo and how to do so-->
 [image][addrepo]
 
 [addrepo]: image
@@ -111,3 +111,6 @@ use `git reset HEAD` to unstage the file.
 use `git reset --soft HEAD~1` to undo a commit.
 
 use `git revert SHA` to undo push.
+
+<!--Great Job :) You were very thorough and direct with your explainations which is good for better understanding. Make sure to explain more of why with the how and the what.-->
+
