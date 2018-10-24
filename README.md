@@ -48,7 +48,7 @@ more helpful because other people might mess with your directories. <!--I don't 
 
 [image][SSHandHTTPS]
 
-[SSHandHTTPS]:image
+[SSHandHTTPS]:/github-tutorial/Capture.PNG
 
 ---
 ## Repository Setup
