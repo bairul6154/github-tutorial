@@ -9,8 +9,8 @@ _What is Git and Github?_
 ##### Git:
 * Git is a _version-control_ system that runs on the command line  
 
-  (so you need to know basic command line codes as well). I recommend going to [codeacademy](https://www.codecademy.com/) 
-  to learn about basic command line before learning git and github.
+  (so you need to know basic command line codes as well. I recommend going to [codeacademy](https://www.codecademy.com/) 
+  to learn about basic command line before learning git and github.)
   
 * Version-control means you can keep track of your code or just about any file. 
 
@@ -35,41 +35,44 @@ If you don't understand some of these, don't worry you will after reading throug
 ---
 ## Initial Setup
 If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
+
 **Creating SSH key**  
 SSH vs. HTTPS  
-They both are the url of the remote repo (github). However HTTPS you have to enter your github username and password everytime you do 
-a push. On the other hand SSH is a one time password for one repo. SSH is the most convient for us 
-(students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
-will use this IDE so your directories will be safe. So if you are working on the same computer with a group, then the HTTPS would be
-more helpful because they might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
+* They both are the _url_ to your **remote** repo or also known as github. 
+* However for HTTPS you have to enter your github username and password everytime you do a _push_. 
+* On the other hand SSH is a one time password for one repo. So you don't have to type in you information every single time. SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
+will use this IDE so your directories will be safe. 
+
+So if you are working on the same computer with a group, then the HTTPS would be
+more helpful because other people might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
 
 [image][SSHandHTTPS]
 
-always make sure you click on SSH when copying or forking a repo
-
-[image][clickonthis]
-
 [SSHandHTTPS]:image
-[clickonthis]:image
 
 ---
 ## Repository Setup
 
-When you are first in bash, you should see this: <!--What is bash? Explain that to make yourself clearer.-->
-[image][bash]  
-The first thing you can do is to create a directory if you haven't. After creating, you must navigate (cd) into the directory before you do
-anything. Once you cd into it, you can do `git init`, which will get all the tools ready for you to use git. If you don't do `git init` you
-can't use any of the git commands. You should see (master) pop up.
+When you are first on the command line or bash
 
-Then you can add whatever file you've just made into the staging area using `git add .`
-The "." at the end of `git add` means it will add every file to the staging area **NOT** including deleted and renamed files. <!--Where is `git add --all`? Remember that 'git add .' doesn't add any deleted or renamed files.-->
+1. The first thing you can do is to **create a directory** using `mkdir` followed by your file name. 
+2. After creating, you must **navigate** into the directory using `cd` followed by your file name. 
+3. Once you cd into it, you can do `git init`.  
+ _This will get all the tools ready for you to use git. If you don't do `git init` then you
+ can't use any of the cool git commands. You should see (master) pop up._
 
-Next you can edit your file by opening it manuelly on the left side where all your directories are, or use
-`c9` and your file name to open its working directory. There you can edit however you want.
+4. Then you can **add** whatever file you've just made into the _staging area_ using `git add` followed by your file name.  
+_Other options you can do that will save you time is to do either `git add .` or `git add --all`. `git add .` will add all files to the stage **except for deleted files**. Whereas `git add --all` will add all files including deleted files. This way you don't have to type out the file name every time_
 
-When you are happy with your edits or edited for a while, you can commit your changes to save them. 
 
-The next step is to create that repo in github. Go to your github account and click on this:  <!--Since I can't see the images posted yet, remember to explain why we create this repo and how to do so-->
+5. Next you can **edit** your file by opening it either manuelly on the left side in your workspace where all your directories are, or use `c9` followed the file name to open its working directory. There you can edit however you want.
+
+6. When you are happy with your edits or you've been editing for a while, you can **commit** your changes to **save** them so you don't lose them when you exit out. You can do this by using `git commit -m "a message"`.  
+_For the "a message" part, type in a relevant message that explains what that commit is. For example, I am writing a paragraph but didn't get to finish. If I want to save my changes so that I can come back to it later, I can write my message as "need to finish analysis". Why do we write these messages? This will tell your future self what that commit is so that you don't forget if you decide to come back to that file later._
+
+Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
+
+7. First create a repo in github. This will set up the destination. Go to your [github](www.github.com) account and click on this on the top right:  
 [image][addrepo]
 
 [addrepo]: image
