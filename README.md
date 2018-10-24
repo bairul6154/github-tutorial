@@ -129,19 +129,23 @@ And that is it, you've linked up your IDE to github.
     * **-u** = upstream. This is telling git to remember where to push to (which repo and which _branch_.
     *  **origin** = telling which remote repo to push to. This is the nickname of the repo
   * Because you typed in **-u** you don't have to type in this long command every single time. The **-u** remembers where to push to. **So you can just type in** `git push` **the next time you want to push, which is a lot shorter.**
+* Use `clear` to _clean_ your IDE, this makes it look nicer. This will make more room for you to code.  
+  
 
 ---
 ## Rolling Back Changes
 
 Rolling back changes means if you can undo what you've done. If you unintentionally _added_ a file, there is a way to undo that. There is a way to _undo_ any add, commit, and push that you've made.
 
-* Use `git checkout` followed by file name to undo changes you've made when editing a file in the working directory. 
+* Use `git checkout` followed by file name to **undo changes** you've made when editing a file in the working directory. 
   * Using this will undo **all** the changes you've made to the file since the **last add**. 
-  * If you did a `git add` before you realized you don't like the edits, you can't use this to undo those edits.
+  * If you did a `git add` before you realized you don't like the edits, you can't use this command to undo those edits.
 
-Use `git reset HEAD` to unstage the file.
+* Use `git reset HEAD` followed by file name to **unstage** the file. 
+  * If you accidentally staged a file, you can unstage it using this command
+  * Lets go back to `git checkout`. This command will not undo edits after you did a `git add`. However if you unstaged (un-add) it using `git reset HEAD`, then `git checkout` will in fact work again and it can undo your edits. 
 
-use `git reset --soft HEAD~1` to undo a commit.
+* Use `git reset --soft HEAD~1` to **undo a commit**. 
 
 use `git revert SHA` to undo push.
 
