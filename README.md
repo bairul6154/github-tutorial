@@ -139,7 +139,7 @@ Rolling back changes means if you can undo what you've done. If you unintentiona
   * Using this will undo **all** the changes you've made to the file since the **last add**. 
   * If you did a `git add` before you realized you don't like the edits, you can't use this to undo those edits.
 
-use `git reset HEAD` to unstage the file.
+Use `git reset HEAD` to unstage the file.
 
 use `git reset --soft HEAD~1` to undo a commit.
 
