@@ -44,8 +44,8 @@ _SSH vs. HTTPS_
   * SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
   will use this IDE so your directories will be safe. 
 
-So if you are working on the same computer with a group, then the HTTPS would be
-more helpful because other people might mess with your directories. 
+If you are working on the same computer with a group, then the HTTPS would be
+more helpful because other people might mess with your directories if you use SSH. 
 
 ![image](/github-tutorial/Capture2.PNG)
 
@@ -74,7 +74,7 @@ The following steps are exclusive to cloud9.
 ---
 ## Repository Setup
 
-When you are first on the command line or bash
+When you are first on your IDE or on your workspace
 
 1. The first thing you can do is to **create a directory** using `mkdir` followed by your file name. 
 2. After creating, you must **navigate** into the directory using `cd` followed by your file name. 
@@ -103,7 +103,7 @@ Now that you have a destination, you have to be able to get to it somehow. Going
 
 3. **Make sure you click on the SSH**
 
-![image](/github-tutotial/Capture3.PNG)
+![image](/github-tutorial/Capture3.PNG)
 
 4. Copy and paste these two commands into your IDE one at a time respectively.
 
@@ -116,23 +116,29 @@ And that is it, you've linked up your IDE to github.
 
 * Use `git status` to make sure you've done what you did. This helps you keep track of what you are doing. 
   * If it shows red then your file have not been added to the stage and it will also suggest what you can do.
+  * if it shows green, then that file is on the stage and it is ready for commit.
 
 * Use `git add` to add your files to the stage. I have explained this before, refer back to repository setup.
 
 * Use `git commit -m` to save your changes that you've made after editing that file. 
   * You have to put a message in quotations "" to have the right syntax. I have also explained this before.
 
-* Use `git push` or `git push -u origin master url` to push your commits up to the cloud or github. 
-  * But you have to do the -u origin master first. The -u means upstream, this means it will remember where you've push to. In this case it will remember that you've pushed to the master branch in github. So next time
-when you want to do git push, you don't have to type out the name of the branch that you want to push if you are constantly
-pushing to the same branch. You can just do `git push`.
-  * an example is this `git remote add origin git@github.com:bairul6154/test.git` 
-
+* Use `git push -u origin master` to push your commits up to github
+  * what do all this mean?
+    * **git** = a git command, duh
+    * **push** = sending (pushing) your commit from your local repo to the remote (github) repo
+    * **-u** = upstream. This is telling git to remember where to push to (which repo and which _branch_.
+    *  **origin** = telling which remote repo to push to. This is the nickname of the repo
+  * Because you typed in **-u** you don't have to type in this long command every single time. The **-u** remembers where to push to. **So you can just type in** `git push` **the next time you want to push, which is a lot shorter.**
 
 ---
 ## Rolling Back Changes
 
-use `git checkout` to undo changes you've made when editing a file.
+Rolling back changes means if you can undo what you've done. If you unintentionally _added_ a file, there is a way to undo that. There is a way to _undo_ any add, commit, and push that you've made.
+
+* Use `git checkout` followed by file name to undo changes you've made when editing a file in the working directory. 
+  * Using this will undo **all** the changes you've made to the file since the **last add**. 
+  * If you did a `git add` before you realized you don't like the edits, you can't use this to undo those edits.
 
 use `git reset HEAD` to unstage the file.
 
