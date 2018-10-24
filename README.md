@@ -6,7 +6,7 @@ _by Bairu Li_
 ## Git vs. GitHub
 
 _What is Git and Github?_  
-##### Git:
+**Git:**
 * Git is a _version-control_ system that runs on the command line  
 
   (so you need to know basic command line codes as well. I recommend going to [codeacademy](https://www.codecademy.com/) 
@@ -17,8 +17,8 @@ _What is Git and Github?_
   The basic workflow of git is creating a file inside a directory and initialize it using `git init`. 
   This turns that _directory_ into a **_repository_**, or repo for short. Then you can add files from your working directory to the 
   _staging area_ using `git add`. The _staging area_ is the step before a commit and it allows you to edit however you want.  
-
-##### Github:
+  
+**Github:**
 * Github is the "cloud" or online in a website
 
   It can _store_ all your files and can let other people to see it or maybe even _collaborate_ on it
@@ -36,8 +36,8 @@ If you don't understand some of these, don't worry you will after reading throug
 ## Initial Setup
 If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
 
-**Creating SSH key**  
-SSH vs. HTTPS  
+### Creating SSH key  
+_SSH vs. HTTPS_  
 * They both are the _url_ to your **remote** repo or also known as github. 
 * However for HTTPS you have to enter your github username and password everytime you do a _push_. 
 * On the other hand SSH is a one time password for one repo. So you don't have to type in you information every single time. 
@@ -51,21 +51,23 @@ more helpful because other people might mess with your directories.
 
 **Steps on creating SSH key:**
 
-1. Go to [github](www.github.com) and click on your **profile icon** on the **top right** and click on **settings**
+1. Go to [github](https://www.github.com) and click on your **profile icon** on the **top right** and click on **settings**
 2. On the left side bar, click on **SSH and GPG keys**
 3. Click on the green **New SSH key button**
 4. Title your SSH key, if you are using cloud9 then type in cloud9
-5. This step is exclusive to cloud9. 
-6. Go to [cloud9](www.c9.io) account and click on the gear icon on the top right
+
+The following steps are exclusive to cloud9. 
+
+5. Go to [cloud9](https://www.c9.io) account and click on the gear icon on the **top right**
 
 ![image](/github-tutorial/Capture4.PNG)
 
-7. click on the SSH keys on the left bar
-8. copy and paste the **_second_** key into **github** and **Add SSH key**
+6. Click on the **SSH keys** on the left bar
+7. Copy and paste the **_second_** key into **github** and **Add SSH key**
 
 ![image](/github-tutorial/Capture5.PNG)
 
-9. Finally open up your workspace and type in the following to your command line:
+8. Finally open up your workspace and type in the following to your command line:
 `ssh -T git@github.com`
 
 
@@ -91,39 +93,41 @@ _For the "a message" part, type in a relevant message that explains what that co
 
 Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
 
-1. First create a repo in github. This will set up the destination. Go to your [github](www.github.com) account and click on "New repository" on the top right:  
+1. First create a _repo_ in github. This will set up the destination. Go to your [github](www.github.com) account and click on "New repository" on the top right:  
 
 ![image](/github-tutorial/Capture.PNG)
 
 2. Enter the name of your repository. This should be the same name as the one in your _local_.
 
+Now that you have a destination, you have to be able to get to it somehow. Going back to the river scenerio, you can't go to the other side if there is no bridge. So to create this bridge that will connect the two, you do the following:
 
+3. **Make sure you click on the SSH**
+
+![image](/github-tutotial/Capture3.PNG)
+
+4. Copy and paste these two commands into your IDE one at a time respectively.
+
+![image](/github-tutorial/Capture6.PNG)
+
+And that is it, you've linked up your IDE to github.
 
 ---
 ## Workflow & Commands
 
-Use `git status` to make sure you've done what you did. This helps you keep track of what you are
-doing. If it shows red then your file have not been added to the stage and it will also suggest what 
-you can do.
+* Use `git status` to make sure you've done what you did. This helps you keep track of what you are doing. 
+  * If it shows red then your file have not been added to the stage and it will also suggest what you can do.
 
-[image][status]
+* Use `git add` to add your files to the stage. I have explained this before, refer back to repository setup.
 
-Use `git add` to add your files to the stage
+* Use `git commit -m` to save your changes that you've made after editing that file. 
+  * You have to put a message in quotations "" to have the right syntax. I have also explained this before.
 
-[image][add]
-
-use `git commit -m` to save your changes that you've made after editing that file. You have to put a message in 
-quotations "" to have the right syntax. This message is important because it will tell your future
-self what that commit is. It will make your commit more clear if you write it in present tense.
-
-use `git push` or `git push -u origin master` to push your commits up to the cloud or github. But 
-you have to do the -u origin master first. The -u means upstream. this means it will remember where you've push
-to. In this case it will remember that you've pushed to the master branch in github. So next time
+* Use `git push` or `git push -u origin master url` to push your commits up to the cloud or github. 
+  * But you have to do the -u origin master first. The -u means upstream, this means it will remember where you've push to. In this case it will remember that you've pushed to the master branch in github. So next time
 when you want to do git push, you don't have to type out the name of the branch that you want to push if you are constantly
 pushing to the same branch. You can just do `git push`.
+  * an example is this `git remote add origin git@github.com:bairul6154/test.git` 
 
-[add]:image
-[status]:image
 
 ---
 ## Rolling Back Changes
