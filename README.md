@@ -46,7 +46,7 @@ will use this IDE so your directories will be safe.
 So if you are working on the same computer with a group, then the HTTPS would be
 more helpful because other people might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
 
-[image][SSHandHTTPS]
+![image][SSHandHTTPS]
 
 [SSHandHTTPS]:/github-tutorial/Capture.PNG
 
