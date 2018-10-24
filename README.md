@@ -40,13 +40,34 @@ If you haven't already, you need to create a github account before you do anythi
 SSH vs. HTTPS  
 * They both are the _url_ to your **remote** repo or also known as github. 
 * However for HTTPS you have to enter your github username and password everytime you do a _push_. 
-* On the other hand SSH is a one time password for one repo. So you don't have to type in you information every single time. SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
-will use this IDE so your directories will be safe. 
+* On the other hand SSH is a one time password for one repo. So you don't have to type in you information every single time. 
+  * SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
+  will use this IDE so your directories will be safe. 
 
 So if you are working on the same computer with a group, then the HTTPS would be
-more helpful because other people might mess with your directories. <!--I don't think it matters when different people work on the computer. Try asking Mr. Mueller about this.-->
+more helpful because other people might mess with your directories. 
 
-![image](/github-tutorial/Capture.PNG)
+![image](/github-tutorial/Capture2.PNG)
+
+**Steps on creating SSH key:**
+
+1. Go to [github](www.github.com) and click on your **profile icon** on the **top right** and click on **settings**
+2. On the left side bar, click on **SSH and GPG keys**
+3. Click on the green **New SSH key button**
+4. Title your SSH key, if you are using cloud9 then type in cloud9
+5. This step is exclusive to cloud9. 
+6. Go to [cloud9](www.c9.io) account and click on the gear icon on the top right
+
+![image](/github-tutorial/Capture4.PNG)
+
+7. click on the SSH keys on the left bar
+8. copy and paste the **_second_** key into **github** and **Add SSH key**
+
+![image](/github-tutorial/Capture5.PNG)
+
+9. Finally open up your workspace and type in the following to your command line:
+`ssh -T git@github.com`
+
 
 ---
 ## Repository Setup
@@ -70,11 +91,13 @@ _For the "a message" part, type in a relevant message that explains what that co
 
 Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
 
-7. First create a repo in github. This will set up the destination. Go to your [github](www.github.com) account and click on this on the top right:  
-[image][addrepo]
+1. First create a repo in github. This will set up the destination. Go to your [github](www.github.com) account and click on "New repository" on the top right:  
 
-[addrepo]: image
-[bash]:image
+![image](/github-tutorial/Capture.PNG)
+
+2. Enter the name of your repository. This should be the same name as the one in your _local_.
+
+
 
 ---
 ## Workflow & Commands
