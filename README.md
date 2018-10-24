@@ -104,7 +104,7 @@ pushing to the same branch. You can just do `git push`.
 ---
 ## Rolling Back Changes
 
-use `git checkout` to undo changes you've made when editing a file
+use `git checkout` to undo changes you've made when editing a file.
 
 use `git reset HEAD` to unstage the file.
 
