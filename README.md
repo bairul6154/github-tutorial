@@ -130,7 +130,7 @@ And that is it, you've linked up your IDE to github.
     * **-u** = upstream. This is telling git to remember where to push to (which repo and which _branch_.
     *  **origin** = telling which remote repo to push to. This is the nickname of the repo
   * Because you typed in **-u** you don't have to type in this long command every single time. The **-u** remembers where to push to. **So you can just type in** `git push` **the next time you want to push, which is a lot shorter.**
-* Use `clear` to _clean_ your IDE, this makes it look nicer. This will make more room for you to code.  
+* Use `clear` to _clean_ your IDE, this makes it look nicer. This will make more room for you to code. This is one of the best commands ever.  
   
 
 ---
