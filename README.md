@@ -146,8 +146,25 @@ Rolling back changes means if you can undo what you've done. If you unintentiona
   * Lets go back to `git checkout`. This command will not undo edits after you did a `git add`. However if you unstaged (un-add) it using `git reset HEAD`, then `git checkout` will in fact work again and it can undo your edits. 
 
 * Use `git reset --soft HEAD~1` to **undo a commit**. 
+  * If you committed accidentally or feel that you want to make just a small change, then you can use this command to undo that commit. This will leave everything untouched. It would only remove the commit.
+* Use `git reset HEAD~1` to **undo a commit _and unstage_ the file**.
+  * There is no `--soft` in this command, so it won't just leave everything as it is. `--soft` is the lightest touch of undoing a commit. 
+  * Your previous edits will still be there
+* Use `git reset --hard HEAD~1` to **undo a commit, unstage the file, _and undo all the changes you've made_**.
+  * This is the hardest commit reset you can do, hence the name `--hard`
+  * Not only this will undo your commit and unstage the file, it will also undo all the changes you made just like `git checkout`.
 
-use `git revert SHA` to undo push.
+Some visuals:
+
+![image](/github-tutorial/Capture7.PNG)
+
+* Use `git revert SHA` to undo push.
+  * This is very risky because it might cause some conflicts when you are collaborating with someone else.
+  * To get the `SHA`, you can do `git log`. `git log` will show you all the commits that you've made and _their number_. This number is beside the commit. Remember to always press 'Q' to quit log.
+  * Example: `git revert a867b4afb5eee4cac766c053`
+
+  
+
 
 <!--Great Job :) You were very thorough and direct with your explainations which is good for better understanding. Make sure to explain more of why with the how and the what.-->
 
