@@ -38,7 +38,7 @@ If you haven't already, you need to create a [github](https://github.com) accoun
 
 ### Creating SSH key  
 _SSH vs. HTTPS_  
-* They both are the _url_ to your **remote** repo or also known as github. 
+* They both are the _url_ to your **remote** repo or github. 
 * However for HTTPS you have to enter your github username and password everytime you do a _push_. 
 * On the other hand SSH is a one time password for one repo. So you don't have to type in your information every single time. 
   * SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
@@ -93,7 +93,7 @@ _For the "a message" part, type in a relevant message that explains what that co
 
 Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
 
-1. First create a _repo_ in github. This will set up the destination. Go to your [github](www.github.com) account and click on "New repository" on the top right:  
+1. First create a _repo_ in github. This will set up the destination; your remote. Go to your [github](www.github.com) account and click on "New repository" on the top right:  
 
 ![image](/github-tutorial/Capture.PNG)
 
@@ -101,7 +101,7 @@ Now that we've finished our local stuff, it is time to create a remote. Think of
 
 Now that you have a destination, you have to be able to get to it somehow. Going back to the river scenerio, you can't go to the other side if there is no bridge. So to create this bridge that will connect the two, you do the following:
 
-3. **Make sure you click on the SSH**
+3. Go back to your remote repo and **make sure you click on the SSH**
 
 ![image](/github-tutorial/Capture3.PNG)
 
