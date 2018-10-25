@@ -16,7 +16,7 @@ _What is Git and Github?_
 
   The basic workflow of git is creating a file inside a directory and initialize it using `git init`. 
   This turns that _directory_ into a **_repository_**, or repo for short. Then you can add files from your working directory to the 
-  _staging area_ using `git add`. The _staging area_ is the step before a commit and it allows you to edit however you want.  
+  _staging area_ using `git add`. The _staging area_ is the step before a commit; it gets you ready for the commit.  
   
 **Github:**
 * Github is the "cloud" or online in a website
@@ -34,13 +34,13 @@ If you don't understand some of these, don't worry you will after reading throug
 
 ---
 ## Initial Setup
-If you haven't already, you need to create a github account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
+If you haven't already, you need to create a [github](https://github.com) account before you do anything. (If you are a HSTAT student then you can HSTAT email as you username)  
 
 ### Creating SSH key  
 _SSH vs. HTTPS_  
 * They both are the _url_ to your **remote** repo or also known as github. 
 * However for HTTPS you have to enter your github username and password everytime you do a _push_. 
-* On the other hand SSH is a one time password for one repo. So you don't have to type in you information every single time. 
+* On the other hand SSH is a one time password for one repo. So you don't have to type in your information every single time. 
   * SSH is the most convient for us (students of HSTAT) because we will only be using cloud9 on our computers. So we will be the only one that
   will use this IDE so your directories will be safe. 
 
@@ -54,7 +54,7 @@ more helpful because other people might mess with your directories if you use SS
 1. Go to [github](https://www.github.com) and click on your **profile icon** on the **top right** and click on **settings**
 2. On the left side bar, click on **SSH and GPG keys**
 3. Click on the green **New SSH key button**
-4. Title your SSH key, if you are using cloud9 then type in cloud9
+4. Title your SSH key. If you are using cloud9 then type in cloud9
 
 The following steps are exclusive to cloud9. 
 
@@ -81,13 +81,14 @@ When you are first on your IDE or on your workspace
 3. Once you cd into it, you can do `git init`.  
  _This will get all the tools ready for you to use git. If you don't do `git init` then you
  can't use any of the cool git commands. You should see (master) pop up._
+4. You can create a file using `touch` followed by a file name.
 
-4.  Then you can **edit** your file by opening it either manuelly on the left side in your workspace where all your directories are, or use `c9` followed the file name to open its working directory. There you can edit however you want.
+5.  Then you can **edit** your file by opening it either manually on the left side in your workspace where all your directories are, or use `c9` followed the file name to open its working directory. There you can edit however you want.
 
-5. When you are happy with your edits or you've been editing for a while, you can **add** that file  into the _staging area_ using `git add` followed by the file name.  
+6. When you are happy with your edits or you've been editing for a while, you can **add** that file  into the _staging area_ using `git add` followed by the file name.  
 _Other options you can do that will save you time is to do either `git add .` or `git add --all`. `git add .` will add all files to the stage **except for deleted files**. Whereas `git add --all` will add all files including deleted files. This way you don't have to type out the file name every time_
 
-6. Next, you can **commit** your changes to **save** them so you don't lose them when you exit out. You can do this by using `git commit -m "a message"`.  
+7. Next, you can **commit** your changes to **save** them so you don't lose them when you exit out. You can do this by using `git commit -m "a message"`.  
 _For the "a message" part, type in a relevant message that explains what that commit is. For example, I am writing a paragraph but didn't get to finish. If I want to save my changes so that I can come back to it later, I can write my message as "need to finish analysis". Why do we write these messages? This will tell your future self what that commit is so that you don't forget if you decide to come back to that file later._
 
 Now that we've finished our local stuff, it is time to create a remote. Think of this as if you are trying to cross a river. There are two locations, where you are at now (your local; c9; IDE) and the other side (remote; github; cloud). You can't cross to the other side,...if the other side is never there to begin with. 
@@ -96,7 +97,7 @@ Now that we've finished our local stuff, it is time to create a remote. Think of
 
 ![image](/github-tutorial/Capture.PNG)
 
-2. Enter the name of your repository. This should be the same name as the one in your _local_.
+2. Enter the name of your repository. This should be the same name as the one in your _local_. And leave everything else the way it is.
 
 Now that you have a destination, you have to be able to get to it somehow. Going back to the river scenerio, you can't go to the other side if there is no bridge. So to create this bridge that will connect the two, you do the following:
 
@@ -135,7 +136,7 @@ And that is it, you've linked up your IDE to github.
 ---
 ## Rolling Back Changes
 
-Rolling back changes means if you can undo what you've done. If you unintentionally _added_ a file, there is a way to undo that. There is a way to _undo_ any add, commit, and push that you've made.
+Rolling back changes means you can undo what you've done. If you unintentionally _added_ a file, there is a way to undo that. There is a way to _undo_ any add, commit, and push that you've made.
 
 * Use `git checkout` followed by file name to **undo changes** you've made when editing a file in the working directory. 
   * Using this will undo **all** the changes you've made to the file since the **last add**. 
